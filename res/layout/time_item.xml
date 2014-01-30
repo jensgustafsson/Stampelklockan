@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/background_activated"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/dateSquare"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/upperPartOfSquare"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:textIsSelectable="false"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/lowerPartOfSquare"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/upperPartOfSquare"
+            android:gravity="center"
+            android:textIsSelectable="false"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/dateSquare"
+        android:background="@drawable/back" >
+
+        <TextView
+            android:id="@+id/clock_in_text"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/inText" />
+
+        <TextView
+            android:id="@+id/clock_detail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/clock_in_text"
+            android:gravity="center_vertical"
+            android:text="@string/breakAndJobText" />
+    </RelativeLayout>
+
+</RelativeLayout>

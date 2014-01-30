@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_clock_in_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:orientation="vertical" 
+        android:background="@drawable/clock_display_background"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:id="@+id/clock_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/default_clock"
+            android:textSize="@dimen/clock_text_size"
+            android:textColor="#616161" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/break_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/default_clock"
+            android:textColor="#C9C9C9"
+            android:textSize="@dimen/clock_break_text_size" >
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_clock_in"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/green_button"
+        android:text="@string/clock_in" />
+
+    <Button
+        android:id="@+id/button_clock_out"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/orange_button"
+        android:text="@string/clock_out" />
+
+</LinearLayout>
